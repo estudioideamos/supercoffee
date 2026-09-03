@@ -21,6 +21,18 @@ export default function PremiumHeader() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    document.body.classList.toggle("nav-open", open);
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.body.classList.remove("nav-open");
+      window.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [open]);
+
   return (
     <header className={`premium-header ${scrolled ? "is-scrolled" : ""}`}>
       <div className="site-container header-inner">
@@ -35,6 +47,10 @@ export default function PremiumHeader() {
               {label}
             </a>
           ))}
+          <div className="mobile-nav-meta" aria-hidden={!open}>
+            <span>Palermo · Buenos Aires</span>
+            <span>08—20 h</span>
+          </div>
         </nav>
 
         <a className="header-cta" href="#menu">

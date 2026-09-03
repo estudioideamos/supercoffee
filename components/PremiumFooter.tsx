@@ -1,39 +1,51 @@
 const footerLinks = [
-  ["#about", "Origen"],
-  ["#menu", "Carta"],
-  ["#gallery", "Momentos"],
-  ["#visit", "Visitanos"],
+  ["01", "#about", "Origen"],
+  ["02", "#menu", "Carta"],
+  ["03", "#gallery", "La casa"],
+  ["04", "#visit", "Contacto"],
 ] as const;
 
 export default function PremiumFooter() {
   return (
-    <footer className="premium-footer">
+    <footer id="site-footer" className="premium-footer" aria-label="Pie de página">
+      <div className="footer-glow" aria-hidden="true" />
       <div className="site-container">
-        <div className="footer-top">
-          <div>
-            <span className="footer-kicker">Seguimos la conversación</span>
-            <h2>¿Otro café?</h2>
-          </div>
-          <a href="mailto:hola@supercoffee.com.ar">
-            hola@supercoffee.com.ar <span aria-hidden="true">↗</span>
+        <div className="footer-eyebrow">
+          <span>Palermo — Buenos Aires</span>
+          <span>Todos los días · 08—20 h</span>
+        </div>
+
+        <div className="footer-statement" data-reveal>
+          <p>La última taza<br />nunca es la última.</p>
+          <a className="footer-contact" href="mailto:hola@supercoffee.com.ar">
+            <span>Hablemos</span>
+            <strong>hola@supercoffee.com.ar</strong>
+            <i aria-hidden="true">↗</i>
           </a>
         </div>
 
-        <div className="footer-grid">
-          <a className="footer-wordmark" href="#home" aria-label="Supercoffee, inicio">
-            <span>SUPER</span>
-            <span>COFFEE</span>
-          </a>
+        <div className="footer-navigation">
           <nav aria-label="Navegación del pie">
-            {footerLinks.map(([href, label]) => <a key={href} href={href}>{label}</a>)}
+            {footerLinks.map(([index, href, label]) => (
+              <a key={href} href={href}>
+                <span>{index}</span>
+                <strong>{label}</strong>
+                <i aria-hidden="true">↗</i>
+              </a>
+            ))}
           </nav>
-          <div className="footer-social">
-            <a href="#home">Instagram</a>
-            <a href="#home">TikTok</a>
-            <a href="#home">Spotify</a>
+          <div className="footer-address">
+            <span>Encontranos</span>
+            <p>Palermo<br />Buenos Aires, AR</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Palermo%2C%20Buenos%20Aires" target="_blank" rel="noreferrer">
+              Cómo llegar <i aria-hidden="true">↗</i>
+            </a>
           </div>
-          <p className="footer-note">Café de especialidad, tostado en pequeñas partidas en Buenos Aires.</p>
         </div>
+
+        <a className="footer-masthead" href="#home" aria-label="Supercoffee, volver al inicio">
+          <span>SUPER</span><span>COFFEE</span>
+        </a>
 
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} Supercoffee</span>
@@ -44,10 +56,11 @@ export default function PremiumFooter() {
             rel="noreferrer"
             aria-label="Concepto por Estudio Ideamos, abrir sitio"
           >
-            <span>Concepto nacido en</span>
+            <span>Concepto y dirección creativa</span>
             <strong>Estudio Ideamos</strong>
             <i aria-hidden="true">↗</i>
           </a>
+          <a className="footer-top-link" href="#home">Volver arriba <span aria-hidden="true">↑</span></a>
         </div>
       </div>
     </footer>

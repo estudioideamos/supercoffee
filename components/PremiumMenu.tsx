@@ -42,7 +42,7 @@ export default function PremiumMenu() {
         <header className="section-heading menu-heading" data-reveal>
           <div>
             <span className="section-index">03 / LA CARTA</span>
-            <h2>Elegí tu próximo <em>ritual.</em></h2>
+            <h2>La carta <em>de hoy.</em></h2>
           </div>
           <p>Recetas precisas, ingredientes honestos y el tiempo necesario para hacerlas bien.</p>
         </header>
@@ -57,7 +57,7 @@ export default function PremiumMenu() {
             />
           </div>
           <div className="menu-feature-copy">
-            <span>NUEVO · FIRMA DE LA CASA</span>
+            <span>RECETA DE LA CASA · 01</span>
             <h3>Super Cold</h3>
             <p>Capas de espresso, leche helada y crema sedosa. Fresco, intenso y perfectamente equilibrado.</p>
             <strong>$4.600</strong>

@@ -36,6 +36,11 @@ export function usePremiumExperience(refs: PremiumRefs) {
       }
 
       const mobile = window.matchMedia("(max-width: 820px)").matches;
+      if (mobile) {
+        root.dataset.mobile = "true";
+        return;
+      }
+
       const beanElements = refs.beans.current.filter(Boolean);
 
       gsap.set([refs.aboutCopy.current, refs.aboutImage.current, refs.signatureCopy.current], {

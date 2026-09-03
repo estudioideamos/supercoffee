@@ -37,9 +37,9 @@ export default function PremiumGallery() {
           <span>CAFÉ · TIEMPO · ORIGEN · TEXTURA · CAFÉ · TIEMPO · ORIGEN · TEXTURA ·</span>
         </div>
         <blockquote data-reveal>
-          “No hacemos café rápido.
+          Café bien hecho.
           <br />
-          Hacemos que el tiempo <em>valga.</em>”
+          Tiempo <em>bien usado.</em>
         </blockquote>
       </section>
 
@@ -48,7 +48,7 @@ export default function PremiumGallery() {
           <header className="section-heading gallery-heading" data-reveal>
             <div>
               <span className="section-index">04 / MOMENTOS</span>
-              <h2>Una casa para <em>quedarte.</em></h2>
+              <h2>La casa, a <em>distintas horas.</em></h2>
             </div>
             <p>Vení por el café. Quedate por la luz, la música y esa mesa que termina siendo tuya.</p>
           </header>
@@ -67,14 +67,13 @@ export default function PremiumGallery() {
       <section className="testimonial-section">
         <div className="site-container testimonial-grid">
           <div className="testimonial-score" data-reveal>
-            <span>4.9</span>
-            <i>★★★★★</i>
-            <p>Más de 380 visitas</p>
+            <span>07</span>
+            <i>MESA / VENTANA</i>
+            <p>La favorita de la tarde</p>
           </div>
           <blockquote data-reveal>
-            “El cappuccino es impecable, pero vuelvo por cómo se siente el lugar:
-            tranquilo, cuidado y con una energía hermosa.”
-            <footer>— Marina T. · clienta habitual</footer>
+            “Una pausa bien hecha cambia el ritmo del día.”
+            <footer>Supercoffee · Buenos Aires</footer>
           </blockquote>
         </div>
       </section>

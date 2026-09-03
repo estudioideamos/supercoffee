@@ -19,7 +19,7 @@ export default function PremiumVisit() {
       <div className="site-container visit-content">
         <div className="visit-copy" data-reveal>
           <span className="section-index light">05 / VISITANOS</span>
-          <h2>Tu próxima pausa<br />empieza <em>acá.</em></h2>
+          <h2>Nos vemos<br />en <em>Palermo.</em></h2>
           <p>Una mesa junto a la ventana, música baja y café recién molido. El resto puede esperar.</p>
           <a
             className="visit-action"

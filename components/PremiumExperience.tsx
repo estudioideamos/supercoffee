@@ -61,7 +61,7 @@ export default function PremiumExperience() {
         <span className={styles.film} />
       </div>
 
-      <div ref={creamStage} className={styles.creamStage}>
+      <div ref={creamStage} id="about" className={styles.creamStage}>
         <div className={styles.creamGrid}>
           <div ref={aboutImage} className={styles.aboutImage}>
             <Image
@@ -74,11 +74,11 @@ export default function PremiumExperience() {
             <span className={styles.imageIndex}>02 / ORIGEN</span>
           </div>
           <div ref={aboutCopy} className={styles.aboutCopy}>
-            <span className={styles.kicker}>Del origen a la taza</span>
+            <span className={styles.kicker}>Tueste en pequeñas partidas</span>
             <h2>
-              El detalle
+              Tostado por lote.
               <br />
-              cambia <em>todo.</em>
+              Servido <em>al punto.</em>
             </h2>
             <p>
               Seleccionamos microlotes, tostamos en pequeñas partidas y ajustamos
@@ -97,11 +97,11 @@ export default function PremiumExperience() {
         <span className={styles.goldHalo} />
         <span className={styles.goldWord} aria-hidden="true">COLD</span>
         <div ref={signatureCopy} className={styles.signatureCopy}>
-          <span className={styles.kicker}>Firma de la casa</span>
+          <span className={styles.kicker}>La receta de la casa</span>
           <h2>
-            Frío. Sedoso.
+            Hielo. Espresso.
             <br />
-            <em>Inolvidable.</em>
+            <em>En ese orden.</em>
           </h2>
           <p>Espresso intenso, leche fría y una textura que cambia con cada sorbo.</p>
           <a href="#menu">Descubrir la carta <span aria-hidden="true">↘</span></a>
@@ -109,16 +109,16 @@ export default function PremiumExperience() {
       </div>
 
       <div ref={heroCopy} className={styles.heroCopy}>
-        <span className={styles.kicker}>Buenos Aires · Tostado propio</span>
+        <span className={styles.kicker}>Palermo · Buenos Aires</span>
         <h1>
-          El café se
+          Café, tiempo
           <br />
-          vuelve <em>experiencia.</em>
+          y <em>oficio.</em>
         </h1>
-        <p>Especialidad sin apuro. Cada taza, una pausa que vale la pena.</p>
+        <p>Tostamos en pequeñas partidas y servimos cada taza como corresponde.</p>
         <div className={styles.actions}>
-          <a className={styles.primaryAction} href="#menu">Explorar la carta</a>
-          <a className={styles.secondaryAction} href="#about">Conocer el ritual</a>
+          <a className={styles.primaryAction} href="#menu">Ver la carta</a>
+          <a className={styles.secondaryAction} href="#about">Cómo lo hacemos</a>
         </div>
       </div>
 
