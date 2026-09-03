@@ -7,7 +7,7 @@
   --caramel: #b87832;
   --gold: #ddb16d;
   --line: rgba(44, 29, 19, .18);
-  --font-display: var(--font-editorial), "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
   --font-body: var(--font-geist-sans), "Helvetica Neue", Arial, sans-serif;
 }
 

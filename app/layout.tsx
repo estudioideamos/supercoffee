@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Geist } from "next/font/google";
+import { Geist } from "next/font/google";
 import { asset } from "@/lib/site";
 import "./globals.css";
 import "./premium.css";
@@ -7,13 +7,6 @@ import "./premium.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-});
-
-const editorialSerif = Cormorant_Garamond({
-  variable: "--font-editorial",
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  style: ["normal", "italic"],
 });
 
 const siteUrl = "https://estudioideamos.github.io/supercoffee/";
@@ -61,7 +54,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="es"
-      className={`${geistSans.variable} ${editorialSerif.variable} h-full antialiased`}
+      className={`${geistSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
         {children}
