@@ -503,3 +503,12 @@
 @media (prefers-reduced-motion: reduce) {
   .film, .cup, .orbit, .scrollCue i::after { animation: none; }
 }
+
+/* Center the mobile hero without changing desktop or form layouts. */
+@media (max-width: 767px) {
+  .heroCopy{text-align:center}
+  .heroCopy h1,.heroCopy p{margin-inline:auto}
+  .heroCopy a{justify-content:center;min-height:44px}
+  .heroCopy>div{justify-content:center}
+
+}
