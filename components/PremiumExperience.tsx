@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRef } from "react";
+import { useMemo, useRef } from "react";
 import { asset } from "@/lib/site";
 import { usePremiumExperience } from "@/hooks/usePremiumExperience";
 import styles from "./PremiumExperience.module.css";
@@ -29,7 +29,7 @@ export default function PremiumExperience() {
   const progress = useRef<HTMLSpanElement | null>(null);
   const scene = useRef<HTMLSpanElement | null>(null);
 
-  usePremiumExperience({
+  const experienceRefs = useMemo(() => ({
     root,
     darkStage,
     creamStage,
@@ -43,7 +43,8 @@ export default function PremiumExperience() {
     beans: beansRef,
     progress,
     scene,
-  });
+  }), []);
+  usePremiumExperience(experienceRefs);
 
   return (
     <section ref={root} id="home" className={styles.root} aria-label="Experiencia Supercoffee">

@@ -198,5 +198,5 @@ export function usePremiumExperience(refs: PremiumRefs) {
       removeHashListener();
       ctx.revert();
     };
-  }, []);
+  }, [refs]);
 }

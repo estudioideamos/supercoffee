@@ -14,6 +14,7 @@ const socialImage =
   "https://estudioideamos.github.io/supercoffee/assets/img/hero-cinematic.webp";
 
 export const metadata: Metadata = {
+  referrer: "strict-origin-when-cross-origin",
   metadataBase: new URL(siteUrl),
   title: "Supercoffee — Café de especialidad",
   description:
